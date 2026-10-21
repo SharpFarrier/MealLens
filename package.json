@@ -1,0 +1,30 @@
+{
+  "name": "meallens",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test:logic": "esbuild scripts/test-logic.ts --bundle --platform=node --format=esm --outfile=.tmp/test-logic.mjs && node .tmp/test-logic.mjs"
+  },
+  "dependencies": {
+    "@supabase/ssr": "0.5.2",
+    "@supabase/supabase-js": "2.45.4",
+    "html5-qrcode": "2.3.8",
+    "next": "16.2.7",
+    "qrcode": "1.5.4",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.9.0",
+    "@types/qrcode": "1.5.5",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.1",
+    "esbuild": "0.24.0",
+    "typescript": "5.6.3"
+  }
+}
